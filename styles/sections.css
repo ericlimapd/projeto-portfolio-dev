@@ -1,0 +1,253 @@
+#intro {
+  width: 100%;
+  background-image: url(../assets/images/Background_Intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding-top: 120px;
+
+  #info {
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    #img-container {
+      width: auto;
+      border: 3px solid var(--red);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: row-reverse;
+      margin-bottom: 56px;
+
+      #profile {
+        border-radius: 50%;
+        border: 4px solid var(--gray-200);
+      }
+
+      #code {
+        position: absolute;
+        display: flex;
+        align-self: end;
+        justify-self: flex-end;
+      }
+    }
+
+    .text-sm {
+      margin-top: 20px;
+    }
+  }
+
+  #tags-container {
+    margin-top: 80px;
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    font: var(--text-md);
+    color: var(--gray-500);
+
+    .tag {
+      border-radius: 60px;
+      padding: 8px 16px;
+      gap: 8px;
+
+      background-color: var(--gray-300);
+
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  #arrow-container {
+    padding-block: 95px 55px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#projects {
+  width: 100%;
+
+  padding-block: 72px 144px;
+
+  display: grid;
+  justify-content: center;
+  gap: 56px;
+
+  background-color: var(--gray-200);
+
+  #projects-title {
+    width: 1040px;
+
+    display: grid;
+    gap: 8px;
+
+    text-align: center;
+
+    p:first-of-type {
+      color: var(--red);
+      font: var(--subtitle);
+    }
+
+    p:last-of-type {
+      color: var(--gray-600);
+      font: var(--title-md);
+    }
+  }
+
+  #projects-container {
+    width: 1040px;
+
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+
+    .project {
+      width: 330px;
+      height: 280px;
+      border-radius: 12px;
+      padding: 12px;
+
+      border: 1.5px solid transparent;
+
+      background-color: var(--gray-300);
+
+      transition: 0.3s linear;
+      cursor: pointer;
+
+      img {
+        width: 306px;
+        border-radius: 8px;
+      }
+
+      div {
+        margin-top: 20px;
+        padding: 4px;
+
+        .text-sm {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .project:hover {
+      border: 1.5px solid var(--gray-400);
+    }
+  }
+}
+
+#services {
+  padding-block: 88px 120px;
+
+  background-color: var(--gray-100);
+
+  #services-title {
+    display: grid;
+    gap: 8px;
+
+    text-align: center;
+
+    p:first-of-type {
+      color: var(--red);
+      font: var(--subtitle);
+    }
+
+    p:last-of-type {
+      color: var(--gray-600);
+      font: var(--title-md);
+    }
+  }
+
+  #services-container {
+    margin-top: 56px;
+
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    .service {
+      padding: 20px;
+      border-radius: 12px;
+      border: 2px solid var(--gray-200);
+
+      img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+#contact {
+  padding: 128px 120px 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  background-image: url(../assets/images/Background_Contacts.png);
+
+  #contact-title {
+    display: grid;
+    gap: 8px;
+
+    text-align: center;
+
+    p:first-of-type {
+      color: var(--purple);
+      font: var(--subtitle);
+    }
+
+    p:nth-child(2) {
+      color: var(--gray-600);
+      font: var(--title-md);
+    }
+
+    p:last-child {
+      color: var(--gray-500);
+      font: var(--text-md);
+    }
+  }
+
+  #contacts-container {
+    margin-top: 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    .contact {
+      border: 1.5px solid transparent;
+      transition: 0.2s linear;
+      cursor: pointer;
+
+      background-color: var(--gray-300);
+
+      display: flex;
+      align-items: center;
+
+      padding: 20px;
+      border-radius: 8px;
+      width: 400px;
+
+      span {
+        font: var(--text-md);
+        margin-left: 12px;
+        color: var(--gray-500);
+      }
+
+      img:last-of-type {
+        margin-left: auto;
+      }
+    }
+
+    .contact:hover {
+      border: 1.5px solid var(--blue);
+    }
+  }
+}

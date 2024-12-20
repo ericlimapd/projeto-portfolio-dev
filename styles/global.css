@@ -30,13 +30,13 @@
 
   /* Asap */
   --title-lg: 56px/120% var(--asap);
-  --title-md-asap: 24px/120% var(--asap);
-  --title-sm-asap: 16px/120% var(--asap);
+  --title-md: 24px/120% var(--asap);
+  --title-sm: 16px/120% var(--asap);
 
   /* Inconsolata */
   --subtitle: 20px/120% var(--inconsolata);
 
   /* Maven Pro */
-  --text-md-maven: 16px/140% var(--maven-pro);
-  --text-sm-maven: 14px/140% var(--maven-pro);
+  --text-md: 16px/140% var(--maven-pro);
+  --text-sm: 14px/140% var(--maven-pro);
 }

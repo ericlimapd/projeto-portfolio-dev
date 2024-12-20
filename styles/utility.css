@@ -1,0 +1,48 @@
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.title-lg {
+  font: var(--title-lg);
+  color: var(--gray-600);
+  margin-top: 8px;
+}
+
+.title-md {
+  font: var(--title-md);
+}
+
+.title-sm {
+  font: var(--title-sm);
+  color: var(--gray-600);
+}
+
+#subtitle {
+  color: var(--gray-500);
+  font: var(--subtitle);
+
+  span {
+    color: var(--red);
+  }
+}
+
+#text-md {
+  font: var(--text-md);
+}
+
+.text-sm {
+  font: var(--text-sm);
+  color: var(--gray-400);
+}
